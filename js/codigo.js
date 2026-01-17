@@ -34,7 +34,7 @@ async function cargarYActualizarTodo() {
 
     try {
         // 2. Cargar el JSON unificado (enero/febrero que creamos)
-        const respuesta = await fetch('../data/calendario-liturgico.json');
+        const respuesta = await fetch('data/calendario-liturgico.json');
         const datosCalendario = await respuesta.json();
 
         // 3. Buscar el objeto del día de hoy
@@ -79,7 +79,7 @@ async function difuntos() {
     const diaHoy = hoy.getDate();
 
     try {
-        const res = await fetch('../data/difuntos.json');
+        const res = await fetch('data/difuntos.json');
         const listaDifuntos = await res.json();
 
         // Buscamos si alguien cumple aniversario de fallecimiento hoy
