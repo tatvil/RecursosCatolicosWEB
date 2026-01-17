@@ -1,0 +1,198 @@
+/* Fuentes importadas corregidas */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600&display=swap');
+
+:root {
+    /* Paleta refinada */
+    --color-primario: #2F3A56;   /* Azul noche espiritual */
+    --color-secundario: #EAF2FA; /* Azul muy suave */
+    --color-fondo: #FAF7F2;      /* Crema papel antiguo */
+    --color-texto: #2b2b2b;
+    --color-acento: #E8A23A;     /* Dorado litúrgico */
+    --blanco-puro: #FFFFFF;
+    --sombra: rgba(47, 58, 86, 0.15);
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif; /* Fuente base moderna */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* --- CABECERA --- */
+.header-hoy {
+    background-color: var(--color-primario);
+    color: var(--blanco-puro);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    transition: background-color 0.8s ease; /* Para que el cambio litúrgico sea suave */
+}
+
+.titulo {
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.fecha {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.ciclo {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0.3rem;
+    opacity: 0.8;
+}
+
+
+#indicador-liturgico {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem; /* Añadimos este margen para empujar el contenido hacia abajo */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+/* --- BLOQUE DEL SANTO --- */
+.santo {
+    background: var(--blanco-puro);
+    color: var(--color-texto);
+    /* Ajustamos el margen negativo para que no suba tanto */
+    margin: -20px auto 20px; 
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--color-acento);
+    border-radius: 12px;
+    max-width: fit-content;
+    box-shadow: 0 10px 20px var(--sombra);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.santo h2 {
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--color-primario);
+}
+
+#descripcion-santo-del-dia {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* --- DIFUNTOS (Mínimo y mono) --- */
+/*
+.tarjeta-difunto {
+    background: #f0f7ff;
+    border-radius: 50px;
+    margin: 2rem auto;
+    max-width: 80%;
+    padding: 10px 20px;
+    border: 1px dashed var(--color-primario);
+} */
+
+.nombre-difunto {
+    font-weight: 600;
+    color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* --- BLOQUES DE CONTENIDO --- */
+.bloque {
+    background-color: var(--blanco-puro);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px; /* Para que no se estire demasiado en PC */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--sombra);
+    border: none; /* Quitamos el borde oscuro para que sea más elegante */
+    text-align: center;
+}
+
+.bloque h3 {
+    font-family: 'EB Garamond', serif;
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.salmo {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-style: italic;
+    color: #444;
+    margin: 0;
+}
+
+.bloque ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.bloque li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 5px;
+}
+
+/* --- BOTONES --- */
+.boton {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+    background-color: #d18d2b;
+}
+
+/* --- RECURSOS (Enlaces abajo) --- */
+.recursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem;
+}
+
+.recursos a {
+    background: var(--color-secundario);
+    color: var(--color-primario);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

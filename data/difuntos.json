@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "José Villa Larramendi",
+    "nacimiento": "1914-01-01",
+    "fallecimiento": "1992-01-01",
+    "nota": "77 años"
+  },
+  {
+    "nombre": "José Luis Ema Diaz",
+    "nacimiento": "1950-06-01",
+    "fallecimiento": "2011-01-15",
+    "nota": "61 años"
+  },
+  {
+    "nombre": "Pilar de la Torre Toboso",
+    "nacimiento": "1918-05-24",
+    "fallecimiento": "2011-01-16",
+    "nota": "93 años"
+  },
+  {
+    "nombre": "Visi Correas González",
+    "nacimiento": "XXXX-11-14",
+    "fallecimiento": "2024-02-04",
+    "nota": ""
+  },
+  {
+    "nombre": "Mamen Fernández",
+    "nacimiento": "1950-03-03",
+    "fallecimiento": "2004-02-24",
+    "nota": ""
+  },
+  {
+    "nombre": "Maribel Gonsalves (madre Kayto)",
+    "nacimiento": null,
+    "fallecimiento": "2024-02-01",
+    "nota": "Mes aproximado"
+  },
+  {
+    "nombre": "Ricardo Martin (padre Kayto)",
+    "nacimiento": null,
+    "fallecimiento": "2024-02-01",
+    "nota": "Mes aproximado"
+  },
+  {
+    "nombre": "Carlos Irrisarri Neff",
+    "nacimiento": "1968-03-01",
+    "fallecimiento": "1988-03-26",
+    "nota": "20 años"
+  },
+  {
+    "nombre": "Carmen del Peral Mendoza",
+    "nacimiento": "1974-10-28",
+    "fallecimiento": "2002-04-07",
+    "nota": "27 años"
+  },
+  {
+    "nombre": "Fernando Collado",
+    "nacimiento": "1954-04-01",
+    "fallecimiento": "1996-04-01",
+    "nota": "42 años"
+  },
+  {
+    "nombre": "Paquita Diaz Espinosa",
+    "nacimiento": "1920-01-17",
+    "fallecimiento": "2007-05-17",
+    "nota": "87 años"
+  },
+  {
+    "nombre": "Pedro Queralt Lortzing",
+    "nacimiento": "1976-08-08",
+    "fallecimiento": "2021-05-16",
+    "nota": "45 años"
+  },
+  {
+    "nombre": "Madre de Gema",
+    "nacimiento": null,
+    "fallecimiento": "1982-08-01",
+    "nota": ""
+  },
+  {
+    "nombre": "Padre de Gema",
+    "nacimiento": null,
+    "fallecimiento": "1984-08-01",
+    "nota": ""
+  },
+  {
+    "nombre": "Mauricio Sánchez",
+    "nacimiento": "XXXX-09-22",
+    "fallecimiento": "XXXX-08-20",
+    "nota": ""
+  },
+  {
+    "nombre": "Trini González (Abuela Juan)",
+    "nacimiento": null,
+    "fallecimiento": "1992-08-01",
+    "nota": ""
+  },
+  {
+    "nombre": "ITA",
+    "nacimiento": null,
+    "fallecimiento": "2022-08-01",
+    "nota": ""
+  },
+  {
+    "nombre": "José Luis Ema Berenguer",
+    "nacimiento": "1910-01-01",
+    "fallecimiento": "1989-01-01",
+    "nota": ""
+  },
+  {
+    "nombre": "Amy y Jorge Gaupp (Mamama y Papapa)",
+    "nacimiento": null,
+    "fallecimiento": null,
+    "nota": "Sin fecha"
+  },
+  {
+    "nombre": "Compañero de HP (Heavy Metal)",
+    "nacimiento": null,
+    "fallecimiento": null,
+    "nota": "Aquel tan listo de HP"
+  }
+]
