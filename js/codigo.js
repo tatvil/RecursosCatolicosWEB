@@ -136,7 +136,7 @@ async function santoDelDia() {
     const fechaISO = new Date(hoy - offset).toISOString().split('T')[0];
     
     try {
-        const res = await fetch('../data/santos.json');
+        const res = await fetch('data/santos.json');
         const listaSantos = await res.json();
 
         // Buscamos el santo usando el campo "fecha" de tu JSON
@@ -163,7 +163,7 @@ async function visualizarSalmo() {
     const salmoElem = document.getElementById('__salmo'); 
 
     try {
-        const res = await fetch('../data/salmos.json');
+        const res = await fetch('data/salmos.json');
         if (!res.ok) throw new Error("No se pudo cargar el salmo");
         
         const listaSalmos = await res.json();
