@@ -44,25 +44,34 @@ async function cargarYActualizarTodo() {
         const nombreTiempoText = document.querySelector('.nombre-color');
 
         if (datosHoy) {
-                        // Mapeo de colores (puedes añadir los hex exactos aquí)
             const mapaColores = {
                 "verde": "#2d5a27",
                 "morado": "#5d2d91",
-                "blanco": "#f0f0f0",
+                "blanco": "#ffffff",
                 "rojo": "#b30000",
                 "azul": "#0074d9",
                 "rosa": "#e7b1cc"
             };
             
-            // Actualizamos Indicador Litúrgico
-            cabeceraHoy.style.backgroundColor = mapaColores[datosHoy.color]; // Fondo para toda la cabecera
+            const colorReal = mapaColores[datosHoy.color] || "#0054a4"; // Color por defecto si no se encuentra
+            
+            // 1. Cambiamos el fondo de la cabecera
+            cabeceraHoy.style.backgroundColor = colorReal;
+            
+            // 2. Ajustamos el color del TEXTO de toda la cabecera
+            // Si el color es claro (blanco o rosa), ponemos texto oscuro. Si no, blanco.
+            const colorTexto = (datosHoy.color === "blanco" || datosHoy.color === "rosa") ? "#2b2b2b" : "#ffffff";
+            
+            cabeceraHoy.style.color = colorTexto;
+            
+            // Forzamos a que el título y la fecha también cambien (por si el CSS es muy específico)
+            const tituloMain = cabeceraHoy.querySelector('.titulo');
+            if (tituloMain) tituloMain.style.color = colorTexto;
+
             indicadorLiturgicoElem.textContent = datosHoy.tiempo;
-            //indicadorLiturgicoElem.style.color = mapaColores[datosHoy.color];
-            if (datosHoy.color === "blanco" || datosHoy.color === "rosa") {
-                indicadorLiturgicoElem.style.color = "#000000"; // Texto oscuro para fondos claros
-            } else {
-                indicadorLiturgicoElem.style.color = "#ffffff"; // Texto claro para fondos oscuros
-            }
+            // Aseguramos que el indicador también use el color de contraste
+            indicadorLiturgicoElem.style.color = colorTexto;
+        
         } else {
             indicadorLiturgicoElem.textContent = "-";
         }
