@@ -4,6 +4,7 @@
 :root {
     /* Paleta refinada */
     --color-primario: #2F3A56;   /* Azul noche espiritual */
+    --color-hover: #24314A;      /* Azul noche más oscuro */
     --color-secundario: #EAF2FA; /* Azul muy suave */
     --color-fondo: #FAF7F2;      /* Crema papel antiguo */
     --color-texto: #2b2b2b;
@@ -36,23 +37,24 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 6px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
 }
 
 .fecha {
+    letter-spacing: 2px;
     font-size: 1.2rem;
     margin-top: 0.5rem;
     font-family: 'EB Garamond', serif;
-    font-style: italic;
     opacity: 0.9;
 }
 
 .ciclo {
-    font-size: 0.9rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 0.3rem;
     opacity: 0.8;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 
@@ -75,9 +77,10 @@ body {
     padding: 1.5rem;
     border: 2px solid var(--color-acento);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(232, 162, 58, 0.5);
     position: relative;
     z-index: 10;
+    max-width: 400px;
 }
 
 .santo h2 {
@@ -91,19 +94,23 @@ body {
     margin-top: 5px;
     font-size: 0.95rem;
     font-style: italic;
-    color: #666;
+    color: #424242;
 }
 
-/* --- DIFUNTOS (Mínimo y mono) --- */
-/*
-.tarjeta-difunto {
-    background: #f0f7ff;
-    border-radius: 50px;
-    margin: 2rem auto;
-    max-width: 80%;
-    padding: 10px 20px;
-    border: 1px dashed var(--color-primario);
-} */
+.santo_discreto {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.santo_discreto #descripcion-santo-del-dia {
+    margin-top: 0px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-secundario);
+}
 
 .nombre-difunto {
     font-weight: 600;
@@ -157,7 +164,7 @@ body {
 /* --- BOTONES --- */
 .boton {
     display: inline-block;
-    background-color: var(--color-acento);
+    background-color: var(--color-primario);
     color: white;
     padding: 12px 25px;
     text-decoration: none;
@@ -171,7 +178,7 @@ body {
 
 .boton:hover {
     transform: translateY(-2px);
-    background-color: #d18d2b;
+    background-color: var(--color-hover);
 }
 
 /* --- RECURSOS (Enlaces abajo) --- */
@@ -191,4 +198,73 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+/* --- ROSARIO --- */
+.contenedor_rosario {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(47, 58, 86, 0.1);
+    max-width: 700px;
+    margin: -30px auto 40px; /* Sube un poco sobre la cabecera */
+    position: relative;
+    z-index: 10;
+}
+
+.contenedor_rosario h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.controles-rosario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.btn-nav {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-nav:hover {
+    background-color: var(--color-acento);
+    transform: translateY(-2px);
+}
+
+.indicador-paso {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-primario);
+}
+
+.imagen-misterio {
+    width: 100%;
+    border-radius: 15px;
+    transition: opacity 0.5s ease;
+    border: 5px solid var(--color-secundario);
+}
+
+#imagen-misterio {
+    transition: opacity 0.4s ease-in-out;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid var(--color-acento); /* Ese E8A23A en acción */
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
 }

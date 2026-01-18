@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-hoy" id="header-hoy">
+        <h1 class="titulo">RECURSOS CATÓLICOS</h1>
+        <h2 class="subtitulo">Rosario</h2>
+
+        <div class="fecha">
+            <span id="fecha-hoy">Martes, 15 de enero de 2026</span>
+
+            <div class="misterio">
+                <span id="nombre_misterio">Nombre del misterio</span>
+            </div>
+        </div>
+
+        <div class="santo_discreto">
+            <h2 id="santo-del-dia">Santa Maria Madre de Dios</h2>
+        </div>
+    </header>
+
+    <div class="contenedor_rosario">
+        <h3 id="titulo_misterio">Primer Misterio Gozoso - La Anunciación del Ángel a María</h3>
+        <div class="controles-rosario">
+            <button id="anterior" class="btn-nav">← Anterior</button>
+            <div class="indicador-paso"><span id="paso-actual">1</span> / 5</div>
+            <button id="siguiente" class="btn-nav">Siguiente →</button>
+        </div>
+        <img src="img/gozosos1.jpg" alt="Rosario Image" id="imagen-misterio" class="imagen-misterio">
+    </div>
+    
+    <script src="js/rosario.js"></script>
+</body>
+</html>

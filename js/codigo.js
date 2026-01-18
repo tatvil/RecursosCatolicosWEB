@@ -50,7 +50,8 @@ async function cargarYActualizarTodo() {
                 "blanco": "#ffffff",
                 "rojo": "#b30000",
                 "azul": "#0074d9",
-                "rosa": "#e7b1cc"
+                "rosa": "#e7b1cc",
+                "violeta": "#a0b5b0"
             };
             
             const colorReal = mapaColores[datosHoy.color] || "#0054a4"; // Color por defecto si no se encuentra
@@ -202,7 +203,6 @@ function visualizarDatos() {
     const opcionesFecha = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const hoy = new Date();
     fechaHoyElem.textContent = hoy.toLocaleDateString('es-ES', opcionesFecha);
-
 }
 
 // Evento de carga unificado
