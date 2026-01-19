@@ -149,16 +149,74 @@ body {
     max-width: 600px; /* Para que no se estire demasiado en PC */
     border-radius: 15px;
     box-shadow: 0 4px 15px var(--sombra);
-    border: none; /* Quitamos el borde oscuro para que sea más elegante */
+    border: 2px solid var(--color-acento); /* Quitamos el borde oscuro para que sea más elegante */
     text-align: center;
 }
 
-.bloque h3 {
-    font-family: 'EB Garamond', serif;
-    color: var(--color-primario);
-    font-size: 1.8rem;
-    margin-top: 0;
+/* --- AJUSTES PARA BLOQUES CON IMAGEN 4:5 --- */
+
+.bloque-fondo {
+    /* Quitamos el padding del contenedor para que la capa oscura llegue a los bordes */
+    padding: 0 !important; 
+    background-size: cover;
+    background-position: center top; 
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--blanco-puro);
+    border-radius: 15px;
+    overflow: hidden;
+    
+    /* Proporción 4:5 - Ajustamos altura mínima para lucir la imagen */
+    min-height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Texto abajo para no tapar caras/arte arriba */
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 2px solid var(--color-acento);
 }
+
+.capa-oscura {
+    /* Graduado: de negro muy sólido abajo a transparente arriba */
+    background: linear-gradient(to top, 
+        rgba(0,0,0,0.9) 0%, 
+        rgba(0,0,0,0.4) 50%, 
+        transparent 100%);
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bloque-fondo h3 {
+    font-family: 'EB Garamond', serif;
+    /* Reducido de 5rem a 2.5rem para que sea elegante y no tape la imagen */
+    font-size: 2.5rem !important; 
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: var(--blanco-puro);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.bloque-fondo p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Ajuste del botón sobre fondo de imagen */
+.bloque-fondo .boton {
+    background-color: var(--color-acento); /* Dorado para que resalte más */
+    color: var(--color-primario);
+    border: none;
+}
+
+.bloque-fondo .boton:hover {
+    background-color: var(--blanco-puro);
+    color: var(--color-primario);
+}
+
+/* --- SALMO DEL DÍA --- */
 
 .salmo {
     font-family: 'EB Garamond', serif;

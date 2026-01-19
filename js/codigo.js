@@ -224,7 +224,7 @@ function visualizarRosario() {
     const misterioHoy = MISTERIOS_DATA[diaSemana];
     const nombreMistElem = document.getElementById('nombre_misterio');
     if (nombreMistElem) {
-        nombreMistElem.textContent = `Hoy rezamos los misterios ${misterioHoy.nombre.toUpperCase()}`;
+        nombreMistElem.textContent = `MISTERIOS ${misterioHoy.nombre.toUpperCase()}`;
     }
 }
 
