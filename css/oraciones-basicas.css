@@ -1,0 +1,45 @@
+/* Fuentes importadas corregidas */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600&display=swap');
+
+:root {
+    /* Paleta refinada */
+    --color-primario: #2F3A56;   /* Azul noche espiritual */
+    --color-hover: #24314A;      /* Azul noche más oscuro */
+    --color-secundario: #EAF2FA; /* Azul muy suave */
+    --color-fondo: #FAF7F2;      /* Crema papel antiguo */
+    --color-texto: #2b2b2b;
+    --color-acento: #E8A23A;     /* Dorado litúrgico */
+    --blanco-puro: #FFFFFF;
+    --sombra: rgba(47, 58, 86, 0.15);
+}
+
+.oracion {
+    background-color: var(--blanco-puro);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 600px; /* Para que no se estire demasiado en PC */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--sombra);
+    border: none; /* Quitamos el borde oscuro para que sea más elegante */
+    text-align: center;
+}
+
+.titulo-oracion {
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-primario);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-acento);
+}
+
+.contenido-oracion {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin-bottom: 2rem;
+}

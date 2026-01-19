@@ -1,4 +1,6 @@
-let fechaHoyElem, santoDelDiaElem, indicadorLiturgicoElem, cabeceraHoy;
+let fechaHoyElem, santoDelDiaElem, indicadorLiturgicoElem, cabeceraHoy, menuPrincipalElem,
+    nombreCicloElem, cicloParImparElem, descripcionSantoDelDiaElem,
+    errorElem, difuntoHoyElem, salmoDelDiaElem;
 
 function inicializarVariables() {
     cabeceraHoy = document.getElementById('header-hoy');
@@ -8,6 +10,7 @@ function inicializarVariables() {
     santoDelDiaElem = document.getElementById('santo-del-dia');
     descripcionSantoDelDiaElem = document.getElementById('descripcion-santo-del-dia');
     indicadorLiturgicoElem = document.getElementById('indicador-liturgico');
+    menuPrincipalElem = document.getElementById('menu-principal');
     errorElem = document.getElementById('__error');
     difuntoHoyElem = document.getElementById('difunto-hoy');
     salmoDelDiaElem = document.getElementById('__salmo');
@@ -54,10 +57,11 @@ async function cargarYActualizarTodo() {
                 "violeta": "#a0b5b0"
             };
             
-            const colorReal = mapaColores[datosHoy.color] || "#0054a4"; // Color por defecto si no se encuentra
+            const colorReal = mapaColores[datosHoy.color] || "var(--color-primario)"; // Color por defecto si no se encuentra
             
             // 1. Cambiamos el fondo de la cabecera
             cabeceraHoy.style.backgroundColor = colorReal;
+            menuPrincipalElem.style.backgroundColor = colorReal;
             
             // 2. Ajustamos el color del TEXTO de toda la cabecera
             // Si el color es claro (blanco o rosa), ponemos texto oscuro. Si no, blanco.
@@ -205,6 +209,25 @@ function visualizarDatos() {
     fechaHoyElem.textContent = hoy.toLocaleDateString('es-ES', opcionesFecha);
 }
 
+function visualizarRosario() {
+    const MISTERIOS_DATA = {
+    0: { nombre: "Gloriosos" },
+    1: { nombre: "Gozosos"},
+    2: { nombre: "Dolorosos" },
+    3: { nombre: "Gloriosos" },
+    4: { nombre: "Luminosos" },
+    5: { nombre: "Dolorosos" },
+    6: { nombre: "Gozosos" }
+};
+    const hoy = new Date();
+    const diaSemana = hoy.getDay();
+    const misterioHoy = MISTERIOS_DATA[diaSemana];
+    const nombreMistElem = document.getElementById('nombre_misterio');
+    if (nombreMistElem) {
+        nombreMistElem.textContent = `Hoy rezamos los misterios ${misterioHoy.nombre.toUpperCase()}`;
+    }
+}
+
 // Evento de carga unificado
 window.addEventListener("load", () => {
     inicializarVariables();
@@ -212,5 +235,6 @@ window.addEventListener("load", () => {
     santoDelDia();
     visualizarDatos();
     visualizarSalmo();
+    visualizarRosario();
     cargarYActualizarTodo(); // Esta función ahora hace el trabajo de las dos anteriores
 });
