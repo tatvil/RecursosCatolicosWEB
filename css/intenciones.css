@@ -7,3 +7,54 @@
     --color-primary-dark: #2F3A56;
     --color-text-light: #FDFBF7;
   }
+
+
+.contenedor-intenciones {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.formulario-intencion {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.formulario-intencion input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--arena);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.lista-personalizada {
+    list-style: none;
+    padding: 0;
+}
+
+.item-intencion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--color-secundario);
+    transition: background 0.3s;
+}
+
+.item-intencion:hover {
+    background-color: #fdfaf5;
+}
+
+.btn-borrar {
+    background: none;
+    border: none;
+    color: #cc0000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+}
