@@ -11,43 +11,12 @@ const MISTERIOS_DATA = {
     6: { nombre: "Gozosos", titulos: ["La Anunciación", "La Visitación", "El Nacimiento", "La Presentación", "El Niño perdido en el Templo"] }
 };
 
-async function santoDelDia() {
-    const hoy = new Date();
-    const offset = hoy.getTimezoneOffset() * 60000;
-    const fechaISO = new Date(hoy - offset).toISOString().split('T')[0];
-    
-    // Obtenemos los elementos aquí para evitar errores de "undefined"
-    const santoElem = document.getElementById('santo-del-dia');
-
-    try {
-        // IMPORTANTE: Ruta relativa para GitHub Pages
-        const res = await fetch('data/santos.json'); 
-        const listaSantos = await res.json();
-        const elSanto = listaSantos.find(d => d.fecha === fechaISO);
-
-        if (elSanto && santoElem) {
-            santoElem.textContent = elSanto.santo + " ruega por nosotros";
-        }
-    } catch (e) {
-        console.error("Error en la carga de santos:", e);
-    }
-}
 
 function inicializarRosario() {
     const hoy = new Date();
     misteriosHoy = MISTERIOS_DATA[hoy.getDay()];
 
-    // Llamamos a la función de los santos
-    santoDelDia();
-    
-    // Poner la fecha (con año)
-    const fechaElem = document.getElementById('fecha-hoy');
-    if (fechaElem) {
-        fechaElem.textContent = hoy.toLocaleDateString('es-ES', { 
-            weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' 
-        });
-    }
-
+  
     const nombreMistElem = document.getElementById('nombre_misterio');
     if (nombreMistElem) nombreMistElem.textContent = `Misterios ${misteriosHoy.nombre}`;
     

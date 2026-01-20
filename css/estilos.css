@@ -23,12 +23,15 @@ body {
 
 /* --- CABECERA --- */
 .header-hoy {
-    background-color: var(--color-primario);
     color: var(--blanco-puro);
     text-align: center;
-    padding: 3rem 1.5rem;
+    min-height: 300px; /* ajusta según tu diseño */
+    padding: 2rem;
+    background-color: var(--color-primario);
+    border-bottom: 1px solid #ccc;
     transition: background-color 0.8s ease; /* Para que el cambio litúrgico sea suave */
 }
+
 
 .titulo {
     font-family: 'EB Garamond', serif;
@@ -122,11 +125,12 @@ body {
 }
 
 /* --- MENÚ PRINCIPAL --- */
+/*menu de escritorio*/
 .menu-principal {
     background-color: var(--color-primario);
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1rem;
     padding: 10px 0;
     margin: 0;
 }
@@ -140,6 +144,45 @@ body {
     letter-spacing: 2px;
     transition: color 0.3s ease;
 }
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+/* MODO MÓVIL */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: autoc;
+    }
+
+    .menu-principal {
+        display: none;
+        flex-direction: column;
+        background-color: inherit;
+        padding: 1rem;
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .menu-principal.activo {
+        display: flex;
+    }
+
+    .menu-principal a {
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+
 
 /* --- BLOQUES DE CONTENIDO --- */
 .bloque {
