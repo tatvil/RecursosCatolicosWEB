@@ -1,0 +1,114 @@
+[
+    {
+        "titulo": "Sagrada Biblia (Conferencia Episcopal Española)",
+        "autor": "CEE",
+        "categoria": "Biblia",
+        "portada": "img/libros/biblia-cee.jpg",
+        "enlace": "https://www.amazon.es/Sagrada-Bibliapopular-geltexbac-EDICIONES-B%C3%8DBLICAS/dp/8422015617"
+    },
+    {
+        "titulo": "Catecismo de la Doctrina Cristiana (Astete)",
+        "autor": "Padre Jerónimo de Ripalda / Gaspar Astete",
+        "categoria": "Doctrina",
+        "portada": "img/libros/catecismo-astete.jpg",
+        "enlace": "https://www.amazon.es/Catecismo-Doctrina-Cristiana-Ediciones-Populares/dp/8483531496"
+    },
+    {
+        "titulo": "365 días con la Madre Teresa de Calcuta",
+        "autor": "José Luis González-Balado",
+        "categoria": "Santos",
+        "portada": "img/libros/madre-teresa.jpg",
+        "enlace": "https://www.amazon.es/d%C3%ADas-Madre-Teresa-Jos%C3%A9-Gonz%C3%A1lez-Balado-ebook/dp/B09SGHLP6R"
+    },
+    {
+        "titulo": "San Francisco de Asís",
+        "autor": "Luis Pérez Simón",
+        "categoria": "Santos",
+        "portada": "img/libros/san-francisco.jpg",
+        "enlace": "https://www.amazon.es/Francisco-Asis-Santos-Amigos-Dios/dp/8484079244"
+    },
+    {
+        "titulo": "Historia de un alma",
+        "autor": "Santa Teresita del Niño Jesús",
+        "categoria": "Santos",
+        "portada": "img/libros/teresita.jpg",
+        "enlace": "https://amzn.eu/d/0bv8Tit"
+    },
+    {
+        "titulo": "Imitación de Cristo",
+        "autor": "Tomás de Kempis",
+        "categoria": "Espiritualidad",
+        "portada": "img/libros/imitacion-cristo.jpg",
+        "enlace": "https://www.amazon.es/Imitaci%C3%B3n-Cristo-Tom%C3%A1s-Kempis/dp/8428526769"
+    },
+    {
+        "titulo": "Confesiones",
+        "autor": "San Agustín",
+        "categoria": "Espiritualidad",
+        "portada": "img/libros/confesiones-agustin.jpg",
+        "enlace": "https://www.amazon.es/Confesiones-San-Agust%C3%ADn/dp/8425436824"
+    },
+    {
+        "titulo": "Camino",
+        "autor": "San Josemaría Escrivá",
+        "categoria": "Espiritualidad",
+        "portada": "img/libros/camino.jpg",
+        "enlace": "https://www.amazon.es/Camino-San-Josemar%C3%ADa-Escriv%C3%A1-Balaguer/dp/8432131983"
+    },
+    {
+        "titulo": "Tratado de la verdadera devoción a la Virgen María",
+        "autor": "San Luis María Grignion de Montfort",
+        "categoria": "Espiritualidad",
+        "portada": "img/libros/devocion-montfort.jpg",
+        "enlace": "https://www.amazon.es/Tratado-verdadera-devoci%C3%B3n-Virgen-Mar%C3%ADa/dp/8490610204"
+    },
+    {
+        "titulo": "Catecismo de la Iglesia Católica",
+        "autor": "Iglesia Católica",
+        "categoria": "Doctrina",
+        "portada": "img/libros/catecismo-iglesia.jpg",
+        "enlace": "https://www.vatican.va/archive/catechism_sp/index_sp.html"
+    },
+    {
+        "titulo": "Youcat (Catecismo joven)",
+        "autor": "Iglesia Católica",
+        "categoria": "Doctrina",
+        "portada": "img/libros/youcat.jpg",
+        "enlace": "https://www.amazon.es/Youcat-Catecismo-Iglesia-Cat%C3%B3lica-j%C3%B3venes/dp/8428540124"
+    },
+    {
+        "titulo": "La Biblia de Jerusalén",
+        "autor": "Escuela Bíblica de Jerusalén",
+        "categoria": "Biblia",
+        "portada": "img/libros/biblia-jerusalen.jpg",
+        "enlace": "https://www.amazon.es/Biblia-Jerusal%C3%A9n-Latinoamericana-Edici%C3%B3n-Bolsillo/dp/8433019247"
+    },
+    {
+        "titulo": "Introducción al cristianismo",
+        "autor": "Joseph Ratzinger (Benedicto XVI)",
+        "categoria": "Doctrina",
+        "portada": "img/libros/introduccion-cristianismo.jpg",
+        "enlace": "https://www.amazon.es/Introducci%C3%B3n-al-cristianismo-Joseph-Ratzinger/dp/8425427814"
+    },
+    {
+        "titulo": "La fuerza del silencio",
+        "autor": "Cardenal Robert Sarah",
+        "categoria": "Espiritualidad",
+        "portada": "img/libros/fuerza-silencio.jpg",
+        "enlace": "https://www.amazon.es/fuerza-del-silencio-Cardenal-Sarah/dp/8422019973"
+    },
+    {
+        "titulo": "Historia de la Iglesia Católica",
+        "autor": "Eusebio de Cesarea",
+        "categoria": "Historia",
+        "portada": "img/libros/historia-iglesia.jpg",
+        "enlace": "https://www.amazon.es/Historia-eclesi%C3%A1stica-Eusebio-Cesarea/dp/8425436824"
+    },
+    {
+        "titulo": "El gran misterio: El Evangelio de la familia",
+        "autor": "Papa Francisco",
+        "categoria": "Doctrina",
+        "portada": "img/libros/gran-misterio.jpg",
+        "enlace": "https://www.amazon.es/gran-misterio-Evangelio-familia/dp/8422019973"
+    }
+]
