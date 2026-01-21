@@ -1,0 +1,76 @@
+ /* Fuentes importadas corregidas */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600&display=swap');
+
+:root {
+    /* Paleta refinada */
+    --color-primario: #2F3A56;   /* Azul noche espiritual */
+    --color-hover: #24314A;      /* Azul noche más oscuro */
+    --color-secundario: #EAF2FA; /* Azul muy suave */
+    --color-fondo: #FAF7F2;      /* Crema papel antiguo */
+    --color-texto: #2b2b2b;
+    --color-acento: #E8A23A;     /* Dorado litúrgico */
+    --blanco-puro: #FFFFFF;
+    --sombra: rgba(47, 58, 86, 0.15);
+}
+
+  body { 
+    font-family: 'Nunito', sans-serif; 
+    background: var(--color-fondo); 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+} 
+
+.container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 10px; 
+    width: 90%; 
+    max-width: 400px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+} 
+
+    
+label { 
+    font-weight: bold; 
+    display: block; 
+    margin-top: 15px; 
+} 
+input { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+} 
+
+button { 
+    width: 100%; 
+    margin-top: 20px; 
+    padding: 12px; 
+    background: var(--color-primario); 
+    color: var(--blanco-puro); 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+} 
+button:hover { 
+    background: var(--color-hover); 
+} 
+.msg { 
+    margin-top: 15px; 
+    text-align: center; 
+    font-size: 14px; 
+} 
+.success { 
+    color: var(--color-acento); 
+} 
+.error { 
+    color: red; 
+}

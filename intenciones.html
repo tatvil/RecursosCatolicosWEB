@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,32 @@
     <link rel="stylesheet" href="css/intenciones.css">
 </head>
 <body>
-    <div id="header-container"></div>
 
-    <div class="contenedor-intenciones">
-    <h3>🙏 Mis Intenciones Personales</h3>
-    <p class="texto-suave">Estas intenciones se guardan solo en tu dispositivo.</p>
-    
+<div id="header-container"></div>
+
+<div class="contenedor-intenciones">
+    <h3>🙏 Intenciones de Oración</h3>
+    <p class="texto-suave">Cada intención se guarda solo en tu dispositivo.</p>
+
     <div class="formulario-intencion">
-        <input type="text" id="nueva-intencion" placeholder="Escribe tu petición aquí...">
-        <button id="btn-guardar" class="boton">Añadir Intención</button>
+        <input type="text" id="nueva-intencion" placeholder="Escribe tu intención...">
+        <button id="btn-guardar" class="boton">Añadir</button>
     </div>
 
-    <ul id="lista-intenciones" class="lista-personalizada">
-    </ul>
+    <div id="muro-intenciones" class="muro-hexagonos"></div>
 </div>
+
+<!-- MODAL -->
+<div id="modal-intencion" class="modal">
+    <div class="modal-contenido">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img id="icono-modal" class="icono-modal" src="">
+        <p id="texto-modal" class="texto-modal"></p>
+    </div>
+</div>
+
 <script src="js/header.js"></script>
 <script src="js/intenciones.js"></script>
+
 </body>
 </html>
