@@ -40,7 +40,7 @@ async function login() {
         }
 
     } catch (e) {
-        msg.textContent = "No se pudo conectar con el servidor.";
+        msg.textContent = "No se pudo conectar con el servidor. Error: " + e;
         msg.classList.add("error");
     }
 }
