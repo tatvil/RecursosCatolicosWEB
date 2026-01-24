@@ -14,7 +14,7 @@
         }
 
         try {
-            const response = await fetch("http://aplicacionesdevanguardia.es:8080/auth/register", {
+            const response = await fetch("http://localhost:8080/auth/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ nombre, email, password })
@@ -30,7 +30,7 @@
             }
 
         } catch (e) {
-            msg.textContent = "No se pudo conectar con el servidor.";
+            msg.textContent = "No se pudo conectar con el servidor." + e;
             msg.classList.add("error");
         }
     }
