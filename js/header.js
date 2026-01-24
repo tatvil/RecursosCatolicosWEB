@@ -94,9 +94,11 @@ async function cargarYActualizarTodo() {
             indicadorLiturgicoElem.style.color = colorTexto;
         } else {
             indicadorLiturgicoElem.textContent = "-";
+            indicadorLiturgicoElem.textContent = "No hay datos para hoy: " + fechaISO;
         }
 
     } catch (error) {
+
         console.error("Error cargando el calendario:", error);
     }
 }

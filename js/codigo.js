@@ -35,7 +35,7 @@ function inicializarVariables() {
     menuPrincipalElem = document.getElementById('menu-principal');
     errorElem = document.getElementById('__error');
     difuntoHoyElem = document.getElementById('difunto-hoy');
-    salmoDelDiaElem = document.getElementById('__salmo');
+    salmoDelDiaElem = document.getElementById('salmo-pcpal');
 
     fechaHoyElem = document.getElementById('fecha-hoy');
     nombreCicloElem = document.getElementById('nombre_ciclo');
@@ -85,8 +85,9 @@ async function difuntos() {
 ============================================ */
 
 async function visualizarSalmo() {
-    const salmoElem = document.getElementById('__salmo'); 
-
+    const salmoElem = document.getElementById('salmo-pcpal'); 
+    salmoDelDiaElem.textContent = 'loco';
+salmoElem.textContent = `pepito`;
     try {
         const res = await fetch('data/salmos.json');
         if (!res.ok) throw new Error("No se pudo cargar el salmo");
@@ -102,7 +103,9 @@ async function visualizarSalmo() {
         const salmoDeHoy = listaSalmos[indiceHoy];
 
         if (salmoDeHoy && salmoElem) {
-            salmoElem.innerHTML = `${salmoDeHoy.texto}`;
+            salmoElem.textContent = `${salmoDeHoy.texto}`;
+        } else {
+            salmoElem.textContent = `${diaDelAnio}`;
         }
 
     } catch (e) {
