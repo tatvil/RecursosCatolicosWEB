@@ -30,7 +30,7 @@
             }
 
         } catch (e) {
-            msg.textContent = "No se pudo conectar con el servidor.";
+            msg.textContent = "No se pudo conectar con el servidor." + e;
             msg.classList.add("error");
         }
     }
